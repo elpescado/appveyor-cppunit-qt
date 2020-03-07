@@ -1,14 +1,14 @@
 environment:
   matrix:
-    - ENV_NAME: MinGW 32
+    - ENV_NAME: MinGW 64
       COMPILER: MinGW
-      QTDIR: "C:\\Qt\\5.11.1\\mingw53_32"
+      QTDIR: 'C:\Qt\5.13.2\mingw73_64'
       GENERATOR: "MinGW Makefiles"
-      SDK: "C:\\mingw-w64\\i686-5.3.0-posix-dwarf-rt_v4-rev0\\mingw32\\bin"
+      SDK: 'C:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0'
 
-    - ENV_NAME: MSVC 32
+    - ENV_NAME: MSVC 64
       COMPILER: MSVC
-      QTDIR: "C:\\Qt\\5.11.1\\msvc2015"
+      QTDIR: 'C:\Qt\5.13.2\msvc2015_64'
       GENERATOR: "Visual Studio 14 2015"
       SDK: ""
   
