@@ -54,7 +54,7 @@ void BuildWorkerApiClient::addTest(const Test &testData)
     QJsonObject json;
     testData.toJson(json);
     QJsonDocument jsonDoc(json);
-    doSyncRequest("POST", "api/test", jsonDoc);
+    doSyncRequest("POST", "api/tests", jsonDoc);
 }
 
 
@@ -63,7 +63,7 @@ void BuildWorkerApiClient::updateTest(const Test &testData)
     QJsonObject json;
     testData.toJson(json);
     QJsonDocument jsonDoc(json);
-    doSyncRequest("PUT", "api/test", jsonDoc);
+    doSyncRequest("PUT", "api/tests", jsonDoc);
 }
 
 
