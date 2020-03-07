@@ -30,6 +30,10 @@ int main(int argc, char **argv)
     QThread::sleep(2);
     test.duration = 2025;
     test.outcome = AppVeyor::TestOutcome::Failed;
+    test.errorMessage = "FooBar!";
+    test.errorStackMessage = "second.cpp:17\nmain.cpp:42";
+    test.stdOut = "Ble ble ble";
+    test.stdErr = "Initializing bulbulator\nReading foobars... done\nZapping caches."; 
     appveyor.updateTest(test);
     return 0;
 }
